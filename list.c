@@ -48,13 +48,20 @@ void * firstList(List * list) {
 
 void * nextList(List * list) {
     int *dato;
-    if(list->current->next==NULL || list==NULL)
+    if(list->current->next==NULL)
     {
         return NULL;
     }
     else
     {
-        dato=list->current->next->data;
+        if(list->current==NULL)
+        {
+            return NULL;
+        }
+        else
+        {
+            dato=list->current->next->data;
+        }
     }
     list->current=list->current->next;
     return dato;
