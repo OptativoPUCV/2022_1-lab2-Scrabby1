@@ -13,7 +13,7 @@ struct Node {
 
 struct List {
     Node * head;
-    int tamano;
+
     Node * tail;
     Node * current;
 };
@@ -30,9 +30,9 @@ Node * createNode(void * data) {
 }
 
 List * createList() {
-    List* lista=(List*)malloc(sizeof(List));
+    List* lista=(List*)calloc(10,sizeof(List));
     lista->head=NULL;
-    lista->tamano=0;
+
     lista->current=NULL;
      return lista;
 }
