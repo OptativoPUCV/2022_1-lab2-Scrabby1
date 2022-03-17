@@ -206,3 +206,8 @@ list.c:51:10: error: 'dato' is used uninitialized in this function [-Werror=unin
 cc1.exe: all warnings being treated as errors
 Compilation failed
 c72e92a
+Thu Mar 17 13:26:35 HSP 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+2f985e7
