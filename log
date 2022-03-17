@@ -123,3 +123,17 @@ list.c:53:12: error: return makes pointer from integer without a cast [-Werror=i
 cc1.exe: all warnings being treated as errors
 Compilation failed
 e319e90
+Thu Mar 17 12:57:25 HSP 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function 'nextList':
+list.c:51:9: error: assignment makes integer from pointer without a cast [-Werror=int-conversion]
+     dato=list->current->next->data;
+         ^
+list.c:53:12: error: return makes pointer from integer without a cast [-Werror=int-conversion]
+     return dato;
+            ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+85bb085
