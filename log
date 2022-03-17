@@ -95,3 +95,17 @@ list.c:51:10: error: 'dato' is used uninitialized in this function [-Werror=unin
 cc1.exe: all warnings being treated as errors
 Compilation failed
 a7df584
+Thu Mar 17 12:56:27 HSP 2022: 
+ list.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+list.c: In function 'nextList':
+list.c:51:9: error: assignment makes integer from pointer without a cast [-Werror=int-conversion]
+     dato=list->current->next->data;
+         ^
+list.c:53:12: error: return makes pointer from integer without a cast [-Werror=int-conversion]
+     return dato;
+            ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+8a3883a
