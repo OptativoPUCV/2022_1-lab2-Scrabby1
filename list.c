@@ -54,14 +54,9 @@ void * nextList(List * list) {
     }
     else
     {
-        if(list->current==NULL)
-        {
-            return NULL;
-        }
-        else
-        {
-            dato=list->current->next->data;
-        }
+
+        dato=list->current->next->data;
+        
     }
     list->current=list->current->next;
     return dato;
