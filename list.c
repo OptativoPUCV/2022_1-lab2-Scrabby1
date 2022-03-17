@@ -43,10 +43,10 @@ void * firstList(List * list) {
 }
 
 void * nextList(List * list) {
-    int *sgte;
-    *sgte=list->current->next;
+    Node* sgte;
+    sgte=list->current->next;
     list->current=list->current->next;
-    return *sgte;
+    return sgte;
 }
 
 void * lastList(List * list) {
