@@ -48,7 +48,7 @@ void * firstList(List * list) {
 
 void * nextList(List * list) {
     int *dato;
-    if(list->current->next==NULL)
+    if(list->current->next==NULL || (list->current->prev==NULL && list->current->next==NULL))
     {
         return NULL;
     }
@@ -56,7 +56,7 @@ void * nextList(List * list) {
     {
 
         dato=list->current->next->data;
-        
+
     }
     list->current=list->current->next;
     return dato;
