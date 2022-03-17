@@ -10,3 +10,17 @@ Thu Mar 17 12:26:43 HSP 2022:
  tests:  1|5
 total_score: 10/70
 fb2683d
+Thu Mar 17 12:39:27 HSP 2022: 
+ list.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+list.c: In function 'nextList':
+list.c:47:9: error: assignment makes integer from pointer without a cast [-Werror=int-conversion]
+     sgte=list->current->next;
+         ^
+list.c:49:12: error: return makes pointer from integer without a cast [-Werror=int-conversion]
+     return sgte;
+            ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+4603ae9
