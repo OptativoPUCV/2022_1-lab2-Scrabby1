@@ -24,3 +24,20 @@ list.c:49:12: error: return makes pointer from integer without a cast [-Werror=i
 cc1.exe: all warnings being treated as errors
 Compilation failed
 4603ae9
+Thu Mar 17 12:40:06 HSP 2022: 
+ list.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+list.c: In function 'nextList':
+list.c:47:10: error: assignment makes integer from pointer without a cast [-Werror=int-conversion]
+     *sgte=list->current->next;
+          ^
+list.c:49:12: error: return makes pointer from integer without a cast [-Werror=int-conversion]
+     return *sgte;
+            ^~~~~
+list.c:47:10: error: 'sgte' is used uninitialized in this function [-Werror=uninitialized]
+     *sgte=list->current->next;
+     ~~~~~^~~~~~~~~~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+040a285
