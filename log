@@ -170,3 +170,9 @@ list.c:53:12: error: return makes pointer from integer without a cast [-Werror=i
 cc1.exe: all warnings being treated as errors
 Compilation failed
 3ce56b6
+Thu Mar 17 13:23:37 HSP 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|5
+total_score: 15/70
+fb7c712
