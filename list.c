@@ -47,10 +47,7 @@ void * firstList(List * list) {
 }
 
 void * nextList(List * list) {
-    Node* sgte;
-    sgte=list->current->next;
-    list->current=list->current->next;
-    return sgte;
+    return list->current->next->data;
 }
 
 void * lastList(List * list) {
