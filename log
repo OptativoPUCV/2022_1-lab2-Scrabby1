@@ -192,3 +192,17 @@ list.c:51:9: error: assignment from incompatible pointer type [-Werror=incompati
 cc1.exe: all warnings being treated as errors
 Compilation failed
 5c784c7
+Thu Mar 17 13:26:01 HSP 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function 'nextList':
+list.c:51:10: error: assignment makes integer from pointer without a cast [-Werror=int-conversion]
+     *dato=list->current->next;
+          ^
+list.c:51:10: error: 'dato' is used uninitialized in this function [-Werror=uninitialized]
+     *dato=list->current->next;
+     ~~~~~^~~~~~~~~~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+c72e92a
