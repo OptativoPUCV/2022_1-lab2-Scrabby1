@@ -48,7 +48,7 @@ void * firstList(List * list) {
 
 void * nextList(List * list) {
     void *dato;
-    if(list->current->next==NULL)
+    if(list->current->next==NULL || list->current==NULL)
     {
         return NULL;
     }
