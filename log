@@ -156,3 +156,17 @@ Thu Mar 17 13:19:43 HSP 2022:
  1 file changed, 2 insertions(+), 3 deletions(-)
  tests:  0|0
 3e12583
+Thu Mar 17 13:22:35 HSP 2022: 
+ list.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+list.c: In function 'nextList':
+list.c:51:9: error: assignment makes integer from pointer without a cast [-Werror=int-conversion]
+     dato=list->current->data;
+         ^
+list.c:53:12: error: return makes pointer from integer without a cast [-Werror=int-conversion]
+     return dato;
+            ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+3ce56b6
