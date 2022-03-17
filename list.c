@@ -71,7 +71,7 @@ void * lastList(List * list) {
 
 void * prevList(List * list) {
     void *dato;
-    if(list->current->prev==NULL || list->current->next==NULL)
+    if(list->current->prev==NULL)
     {
         return NULL;
     }
