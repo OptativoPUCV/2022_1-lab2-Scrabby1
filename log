@@ -151,3 +151,8 @@ list.c:53:12: error: function returns address of local variable [-Werror=return-
 cc1.exe: all warnings being treated as errors
 Compilation failed
 9925e0f
+Thu Mar 17 13:19:43 HSP 2022: 
+ list.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+ tests:  0|0
+3e12583
