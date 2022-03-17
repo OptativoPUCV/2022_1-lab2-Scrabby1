@@ -78,3 +78,20 @@ Thu Mar 17 12:53:35 HSP 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 c5b8a44
+Thu Mar 17 12:53:57 HSP 2022: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+list.c: In function 'nextList':
+list.c:51:10: error: assignment makes integer from pointer without a cast [-Werror=int-conversion]
+     *dato=list->current->next->data;
+          ^
+list.c:53:12: error: return makes pointer from integer without a cast [-Werror=int-conversion]
+     return *dato;
+            ^~~~~
+list.c:51:10: error: 'dato' is used uninitialized in this function [-Werror=uninitialized]
+     *dato=list->current->next->data;
+     ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+a7df584
