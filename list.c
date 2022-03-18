@@ -48,13 +48,13 @@ void * firstList(List * list) {
 
 void * nextList(List * list) {
     void *dato;
-    if(list->current->next==NULL)
+    if(list->current!=NULL)
     {
         return NULL;
     }
     else
     {
-        if(list->current==NULL)
+        if(list->current->next==NULL)
         {
             return NULL;
         }
