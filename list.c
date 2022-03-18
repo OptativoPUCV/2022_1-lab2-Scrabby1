@@ -50,7 +50,7 @@ void * nextList(List * list) {
     void *dato;
     if(list->current!=NULL)
     {
-        dato=list->current->next->data;
+        return NULL;
     }
     else
     {
