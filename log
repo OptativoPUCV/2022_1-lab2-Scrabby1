@@ -404,3 +404,9 @@ Fri Mar 18 14:46:52 HSP 2022:
  tests:  11|1
 total_score: 55/70
 879d4c7
+Fri Mar 18 15:18:50 HSP 2022: 
+ list.c | 33 +++++++++++++++++++++++++++++++++
+ 1 file changed, 33 insertions(+)
+ tests:  12|0
+total_score: 70/70
+00185b3
