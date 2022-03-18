@@ -78,13 +78,20 @@ void * lastList(List * list) {
 
 void * prevList(List * list) {
     void *dato;
-    if(list->current->prev==NULL)
+    if(list->current==NULL)
     {
         return NULL;
     }
     else
     {
-        dato=list->current->prev->data;
+        if(list->current->prev==NULL)
+        {
+            return NULL;
+        }
+        else
+        {
+            dato=list->current->prev->data;
+        }
     }
     list->current=list->current->prev;
     return dato;
